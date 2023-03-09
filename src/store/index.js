@@ -2,13 +2,34 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-  },
-  getters: {
+    count: 0
   },
   mutations: {
+    increment (state) {
+      state.count++
+    },
+    decrement (state) {
+      state.count--
+    },
+    setValue (state, value) {
+      state.count = value
+    },
+    reset (state) {
+      state.count = 0
+    }
   },
   actions: {
-  },
-  modules: {
+    increment ({ commit }) {
+      commit('increment')
+    },
+    decrement ({ commit }) {
+      commit('decrement')
+    },
+    setValue ({ commit }, value) {
+      commit('setValue', value)
+    },
+    reset ({ commit }) {
+      commit('reset')
+    }
   }
 })

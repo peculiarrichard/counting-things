@@ -1,18 +1,33 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h2>Count THings- A counting app for everybody and anybody</h2>
+    <p>With Count THings, you can increment, decrement, reset, and set value</p>
+    <button @click="$router.push('/counter')">Explore Counting THings</button>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
+  name: 'HomeView'
 }
 </script>
+
+<style>
+.home>h2{
+  margin: 1rem;
+}
+.home>button{
+  margin:2rem;
+  width: 12rem;
+  height: 4rem;
+  border: none;
+  border-radius: 3rem;
+  background: rgb(92, 3, 87);
+  color: white;
+}
+
+.home{
+  padding: 1rem;
+}
+</style>
