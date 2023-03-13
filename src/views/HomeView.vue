@@ -2,7 +2,7 @@
   <div class="home">
     <h2>Count THings- A counting app for everybody and anybody</h2>
     <p>With Count THings, you can increment, decrement, reset, and set value</p>
-    <button @click="$router.push('/counter')">Explore Counting THings</button>
+    <button @click="$router.push('/counter')">Explore Count THings</button>
   </div>
 </template>
 
