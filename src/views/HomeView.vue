@@ -25,8 +25,12 @@ export default {
   border-radius: 3rem;
   background: rgb(92, 3, 87);
   color: white;
+  cursor:pointer;
 }
 
+.home>button:hover{
+  background-color: rgb(197, 121, 193);
+}
 .home{
   padding: 1rem;
 }
