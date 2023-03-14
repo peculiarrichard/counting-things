@@ -1,4 +1,6 @@
-# vuecounter-app
+# Count THings
+
+Deployed link : https://counting-things.vercel.app/
 
 ## Project setup
 ```
